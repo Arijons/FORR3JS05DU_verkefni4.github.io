@@ -1,0 +1,25 @@
+﻿
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+
+ <style type="text/javascript" src="verkefni_4.css"></style>
+</head>
+<!--þessi skipun keyrir leikinn í gang -->
+<body onload="startGame()">
+ <!-- hér fyrir neðan er scriptið sem stýrir leiknum-->   
+ <script type="text/javascript" src="verkefni_4.js"></script>
+<!--þetta eru pílur sem eru fyrir neðan canvas og nota button til að hreyfa leikja kallinn-->
+<div style="text-align:center;width:480px;">
+  <button onmousedown="move('up')" onmouseup="clearmove()" ontouchstart="move('up')">&#8593</button><br><br>
+  <button onmousedown="move('left')" onmouseup="clearmove()" ontouchstart="move('left')">&#8592</button>
+  <button onmousedown="move('right')" onmouseup="clearmove()" ontouchstart="move('right')">&#8594</button><br><br>
+  <button onmousedown="move('down')" onmouseup="clearmove()" ontouchstart="move('down')">&#8595</button>
+</div>
+
+<p>Ýtið á örvarnar með músinni.</p>
+</body>
+</html>
